@@ -1,0 +1,84 @@
+HTML
+<div class="Header">
+      <div id="Logo"> <img src="IMG/Logo.png"> </div>
+      <div id="Title">
+        <H1> SHORE STORE </H1>
+      </div>
+      <div id="Redes">
+
+        <a href="" target="_blank" alt="ig-icono"> <img src="IMG/WTE.png" alt="" id="WTE"> </a>
+        <a href="https://www.instagram.com/enricaria/" target="_blank" alt="ig-icono"> <img src="IMG/IGE.png" alt=""
+            id="IGE"> </a>
+        <a href="https://www.facebook.com/diego.carias.9638/" target="_blank" alt="ig-icono"> <img src="IMG/FBE.png"
+            alt="" id="FBE"> </a>
+      </div>
+    </div>
+
+
+
+
+CSS
+
+.Header {
+	background-color: rgb(0, 0, 0);	
+	width: 100%;
+	display: block;
+	margin-left: 0%;
+	clear: none;
+	margin-bottom: 2px;
+	}
+
+	#Logo  {
+		clear:  none;
+		display:  block;
+		float: left;
+		margin-left:  0;
+		width:  29%;
+}
+
+#Title  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left: 2%;
+	padding-right: 0%;
+	width:  39%;
+	padding-top: 2rem;
+}
+
+#Redes  {
+	clear:  none;
+	display:  block;
+	float: right;
+	margin-left:  0%;
+	width:  29%;
+}
+
+#WTE  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left:  5px;
+	width:  29%;
+	padding-top: 2rem;
+}
+
+#IGE  {
+	clear:  none;
+	display:  block;
+	float: left ;
+	margin-left:  5px;
+	width:  29%;
+	padding-top: 2rem;
+}
+
+#FBE  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left:  3px;
+	width:  29%;
+	padding-top: 2rem;
+
+}
+

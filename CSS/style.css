@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* Medios fluidos sencillos
+   Nota: Los medios fluidos exigen la eliminación de los atributos de altura y anchura de los medios del código HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video, iframe, #Logo{
+	max-width: 100%;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-bottom: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+#Redes{
+	max-width: 100%;
+	margin-left: 9px;
+	margin-right: px;
+   
+}
+
+#Subtema, #texto, h1{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* IE 6 no admite max-width (anchura máxima), por lo que usa de manera predeterminada una anchura del 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Propiedades de cuadrícula fluida de Dreamweaver
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiración obtenida de "Responsive Web Design" de Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	y Golden Grid System de Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Diseño móvil: 480 px e inferior. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+	background-color: #000;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	background-color: #000;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	background-color: #000;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+body  {
+background-color: #000;	
+}
+
+.Header {
+	background-color: rgb(0, 0, 0);	
+	width: 100%;
+	display: block;
+	margin-left: 0%;
+	clear: none;
+	margin-bottom: 2px;
+	}
+
+	#Logo  {
+		clear:  none;
+		display:  block;
+		float: left;
+		margin-left:  0;
+		width:  29%;
+}
+
+#Title  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left: 2%;
+	padding-right: 0%;
+	width:  39%;
+	padding-top: 2rem;
+}
+
+#Redes  {
+	clear:  none;
+	display:  block;
+	float: right;
+	margin-left:  0%;
+	width:  29%;
+}
+
+#WTE  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left:  5px;
+	width:  29%;
+	padding-top: 2rem;
+}
+
+#IGE  {
+	clear:  none;
+	display:  block;
+	float: left ;
+	margin-left:  5px;
+	width:  29%;
+	padding-top: 2rem;
+}
+
+#FBE  {
+	clear:  none;
+	display:  block;
+	float: left;
+	margin-left:  3px;
+	width:  29%;
+	padding-top: 2rem;
+
+}
+
+
+H1 {
+	color: #FFFFFF;
+	text-align: center;
+	}
+
+	#texto {	
+		color: #FFFFFF;
+		}
+
+		#Subtema {	
+			color: #FFFFFF;
+			}
+
+	#banner {	
+		width: 100%;
+	
+		}
+
+	#Article {
+		clear: none;
+		float: left;
+		margin-left: 0%;
+		width: 73%;
+		display: block;
+		margin-bottom: 1%;
+		margin-top: 1%;
+	}
+
+#Section1 {
+
+clear:none ;
+display : block;
+float: left;
+margin-left:  0%;
+width:  49%;
+margin-top: 30px;
+}
+#Section2 {
+
+	clear:none ;
+	display : block;
+	float: left;
+	margin-left:  2%;
+	width:  49%;
+	margin-top: 30px;
+	}
+
+	#Section3 {
+
+		clear:none ;
+		display : block;
+		float: left;
+		margin-left:  0%;
+		width:  49%;
+	    margin-top: 30px;
+		}
+
+		#Section4 {
+
+			clear:none ;
+			display : block;
+			float: left;
+			margin-left:  2%;
+			width:  49%;
+			margin-top: 30px;
+			}
+
+			#Aside {
+
+				clear:none ;
+				display : block;
+				float: right;
+				margin-left: 0 ;
+				width:  26%;
+				margin-bottom: 1%;
+				margin-top: 1%;
+				}
+
+				#Footer {
+					background-color: rgb(0, 0, 0);	
+					width: 100%;
+					display: block;
+					margin-left: 0%;
+					margin-top: 100px;
+					padding-bottom: 10px;
+					}
+
+
+							#formulario {	
+							float: left;
+							clear: none;
+							padding-left: 15rem;
+							padding-top: 10px;
+								}
+        
+								#texto {	
+									text-align: center;
+									font-size: 1.5rem;
+									width: 1175px;
+									height: 100px;
+									}
+
+									#Subtema {	
+										font-size: 2rem;
+										text-align: center;
+										}
+				
+										#banner {	
+											padding-top: 5px;
+											padding-bottom: 5px;
+											}
+}
